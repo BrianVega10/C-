@@ -1,0 +1,15 @@
+#include<stdio.h>
+int  brian(char c){
+	if((c='_')||(c='a'&& c<='z')||(c='A'&& c<='Z'))
+	return 1;
+}
+int main(void){
+	char c;
+	printf("Escribe el caracter\n");
+	scanf("%c",c);
+	if(brian (c))
+	printf("El caracter que tecleaste cumple y se trata de una letra o guion bajo");
+	else
+	printf("El caracter que tecleaste no es una letra o un guion");
+	return 0;
+}
