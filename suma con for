@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main(){
+	int A,B,O,n;
+	int total;
+	printf("Ingrese el primer valor:");
+	scanf("%d",&A);
+	printf("Ingrese el segundo valor:");
+	scanf("%d",&B);
+	if (A>B)
+	printf("\nEl primer valor es mayor");
+	scanf("%d",&n);
+	else
+	printf("\nEl segundo valor es mayor");
+	scanf("%d",&n);
+	printf("\nLa suma de los valores de 1 hasta el numero mayor es:");
+	for(O=1;O<=n,O++)
+	{
+		total=total+O;
+		printf("%d+",O);
+	}
+	printf("La suma total es%d",total);
+	return 0;
