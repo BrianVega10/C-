@@ -110,3 +110,41 @@ for(i=1; i<=n; i++) {
 	printf("\n");
   }
 }
+/////////////////////////////////////////////////////////////////////////////////////////////////
+#include <stdio.h>  
+void imprime(int); 
+void imprimede(int); 
+int main()          
+{
+int n=0;            
+printf("Indica el numero limite:      ");   
+scanf("%d", &n);    
+imprime(n);  
+imprimede(n);       
+return 0;           
+}                   
+void imprime(int b) 
+{
+int a,c;            
+for(a=0; a<=b; a++) 
+{
+    for(c=1; c<=a; c++)      
+        printf("%d\t", c);   
+ printf("\n");              
+}
+void imprimede(int g)
+{
+	int o,p,d;
+	for(o=1;o<=g;o++)
+	  {
+		 for(p=g;p>o;p--)
+		 {
+			printf("\t");
+		 }
+		 for(d=o;d>0;d--)
+		 {
+			printf("%d\t",d);
+	     }
+		 printf("\n");
+     } 
+}
